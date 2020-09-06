@@ -56,7 +56,7 @@ namespace Zadatak_1.View
                     Id = int.Parse(row[0].ToString()),
                     FirstName = row[1].ToString(),
                     LastName = row[2].ToString(),
-                    DateOfBirth = row[3].ToString(),
+                    DateOfBirth = DateTime.Parse(row[3].ToString()),
                     Gender = row[4].ToString(),
                     Email = row[5].ToString(),
                     PhoneNumber = row[6].ToString(),

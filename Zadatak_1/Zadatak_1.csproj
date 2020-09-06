@@ -61,6 +61,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\User.cs" />
+    <Compile Include="Validation\UserValidation.cs" />
+    <Compile Include="ViewModel\RegisterUserViewModel.cs" />
     <Compile Include="View\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -111,9 +113,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Validation\" />
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

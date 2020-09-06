@@ -8,6 +8,25 @@
         mc:Ignorable="d"
         Title="RegistrationWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="93,89,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,88,0,0" TextWrapping="Wrap" Text="{Binding User.FirstName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,137,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,137,0,0" TextWrapping="Wrap" Text="{Binding User.LastName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="340,185,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="433,185,0,0" TextWrapping="Wrap" Text="{Binding User.PhoneNumber, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="380,89,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CmbGender" IsEditable="True" IsReadOnly="True" HorizontalAlignment="Left" Margin="433,88,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Genders}" SelectedItem="{Binding User.Gender, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="584,93,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="646,88,0,0" TextWrapping="Wrap" Text="{Binding User.Username, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="588,140,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,188,0,0" TextWrapping="Wrap" Text="Date of birth" VerticalAlignment="Top"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" Margin="162,185,0,0" VerticalAlignment="Top" Width="120" Text="{Binding User.DateOfBirth, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="390,143,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="433,137,0,0" TextWrapping="Wrap" Text="{Binding User.Email, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <Button Click="Btn_Confirm" Content="Confirm" HorizontalAlignment="Left" Margin="291,323,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="Btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="433,323,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label FontSize="25" Content="Register" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="PswBox" HorizontalAlignment="Left" Margin="646,137,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+
     </Grid>
 </Window>
